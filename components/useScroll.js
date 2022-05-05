@@ -4,7 +4,7 @@ const useScroll = () => {
 
   React.useEffect(() => {
     const scrollHandler = () => {
-      window.pageYOffset > 20 ? setIsMoved(true) : setIsMoved(false);
+      window.pageYOffset > 50 ? setIsMoved(true) : setIsMoved(false);
     };
     window.addEventListener("scroll", scrollHandler);
     scrollHandler();
