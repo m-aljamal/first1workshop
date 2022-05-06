@@ -1,21 +1,32 @@
+import Image from "next/image";
 import React from "react";
+import { imageBuilder } from "../lib/sanity";
 
-const Services = () => {
+const Services = ({ services }) => {
   return (
-    <div className="container  " name="services">
+    <div className="container" name="services">
       <h2 className="text-5xl font-bold text-center text-gray-700">
         General Auto Maintenance
       </h2>
-      <div className="text-red-700 text-center text-xl font-bold">
+      <div className="text-red-700 text-center text-xl font-bold tracking-wider">
         <p>Auto repair with latest technology and</p>
         <p>expertise to earn your trust</p>
       </div>
       <div className="grid grid-cols-3 gap-4 py-20">
-        {services.map(({ title, description, image, id }) => (
-          <div key={id} className="bg-blue-300 p-2">
-            <p>{image}</p>
-            <h2>{title}</h2>
-            <p>{description}</p>
+        {services.map(({ title, description, Icon, _id }) => (
+          <div key={_id} className=" ">
+            <div className="flex justify-center">
+              <Image
+                width={100}
+                height={100}
+                alt={`Cover Image for ${title}`}
+                src={imageBuilder(Icon).url()}
+              />
+            </div>
+            <h2 className="text-red-700 font-bold text-center text-xl my-2 tracking-wider">
+              {title}
+            </h2>
+            <p className="text-gray-700 text-center tracking-wide">{description}</p>
           </div>
         ))}
       </div>
@@ -24,48 +35,3 @@ const Services = () => {
 };
 
 export default Services;
-
-const services = [
-  {
-    title: "OIL CHANGES",
-    description:
-      "Regularly changing your oil and filter will help the engine work its best.",
-    image: "oil.jpg",
-    id: 1,
-  },
-  {
-    title: "OIL CHANGES",
-    description:
-      "Regularly changing your oil and filter will help the engine work its best.",
-    image: "oil.jpg",
-    id: 2,
-  },
-  {
-    title: "OIL CHANGES",
-    description:
-      "Regularly changing your oil and filter will help the engine work its best.",
-    image: "oil.jpg",
-    id: 3,
-  },
-  {
-    title: "OIL CHANGES",
-    description:
-      "Regularly changing your oil and filter will help the engine work its best.",
-    image: "oil.jpg",
-    id: 4,
-  },
-  {
-    title: "OIL CHANGES",
-    description:
-      "Regularly changing your oil and filter will help the engine work its best.",
-    image: "oil.jpg",
-    id: 5,
-  },
-  {
-    title: "OIL CHANGES",
-    description:
-      "Regularly changing your oil and filter will help the engine work its best.",
-    image: "oil.jpg",
-    id: 6,
-  },
-];

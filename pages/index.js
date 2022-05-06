@@ -9,12 +9,9 @@ import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Home from "../components/Home";
 import Services from "../components/Services";
-import Pricing from "../components/Pricing";
-export default function Index({ allPosts, preview, allServices }) {
-  const heroPost = allPosts[0];
-  const morePosts = allPosts.slice(1);
-
-  console.log(allServices);
+import ContactUs from "../components/ContactUs";
+import Service24 from "../components/Service24";
+export default function Index({ preview, allServices }) {
   return (
     <>
       {/* <Layout preview={preview}>
@@ -39,18 +36,18 @@ export default function Index({ allPosts, preview, allServices }) {
       <div>
         <Navbar />
         <Home />
-        <Services />
-        <Pricing />
+        <Services services={allServices} />
+        <Service24 />
+        <ContactUs />
       </div>
     </>
   );
 }
 
 export async function getStaticProps({ preview = false }) {
-  const allPosts = await getAllPostsForHome(preview);
   const allServices = await getAllServices();
   return {
-    props: { allPosts, preview, allServices },
+    props: { preview, allServices },
     revalidate: 1,
   };
 }

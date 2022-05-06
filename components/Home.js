@@ -98,12 +98,5 @@ const Home = () => {
 export default Home;
 
 const ImageContainer = ({ children }) => {
-  return (
-    <div
-      className="relative   bg-white"
-      style={{ height: `calc(100vh - 50px)` }}
-    >
-      {children}
-    </div>
-  );
+  return <div className="relative   bg-white h-screen">{children}</div>;
 };
