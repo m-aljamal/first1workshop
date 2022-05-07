@@ -11,6 +11,7 @@ import post from "./post";
 import author from "./author";
 import comment from "./comment";
 import service from "./service";
+import gellery from "./gellery";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -29,5 +30,6 @@ export default createSchema({
     blockContent,
     comment,
     service,
+    gellery,
   ]),
 });
