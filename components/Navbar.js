@@ -47,9 +47,9 @@ const Navbar = ({ isSticky }) => {
         ) : (
           <div className="flex justify-center">
             <Image
-              src="/white_logo.png"
-              width={100}
-              height={100}
+              src="/white logo03.png"
+              width={300}
+              height={50}
               priority
               objectFit="contain"
             />
@@ -57,7 +57,7 @@ const Navbar = ({ isSticky }) => {
         )}
 
         <div>
-          <div className=" flex justify-center gap-3    ">
+          <div className=" flex justify-center gap-8    ">
             {links.map(({ to, label }) => (
               <Nav to={to} label={label} key={label} />
             ))}

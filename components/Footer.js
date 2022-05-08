@@ -19,8 +19,11 @@ const info = [
 const Footer = () => {
   return (
     <footer className="bg-[#0f1017] py-4">
-      <div className="container flex justify-between">
-        <div>
+      <div className="container grid grid-cols-3">
+        <div className="relative">
+          <Image src="/white_logo.png" layout="fill" objectFit="contain" />
+        </div>
+        <div className="">
           <h2 className="text-red-700 tracking-wider font-bold py-3 text-2xl">
             Contact Info
           </h2>
@@ -31,10 +34,7 @@ const Footer = () => {
             </div>
           ))}
         </div>
-        <div className="relative w-1/3">
-          <Image src="/white_logo.png" layout="fill" objectFit="contain" />
-        </div>
-        <div>
+        <div className="">
           <h2 className="text-red-700 tracking-wider font-bold py-3 text-2xl">
             Opening Hours
           </h2>
