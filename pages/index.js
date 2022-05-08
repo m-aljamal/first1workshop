@@ -13,6 +13,7 @@ import ContactUs from "../components/ContactUs";
 import Service24 from "../components/Service24";
 import Gellery from "../components/Gellery";
 import WhatWeDo from "../components/WhatWeDo";
+import Footer from "../components/Footer";
 export default function Index({ preview, allServices, gellery }) {
   return (
     <>
@@ -43,6 +44,7 @@ export default function Index({ preview, allServices, gellery }) {
         <WhatWeDo />
         <Gellery gellery={gellery} />
         <ContactUs />
+        <Footer/>
       </div>
     </>
   );
