@@ -33,23 +33,27 @@ const Navbar = ({ isSticky }) => {
           : "bg-white text-black   fixed dark:bg-black bg-opacity-80 dark:bg-opacity-80 backdrop-blur dark:backdrop-blur transition duration-500  ease-in-out  z-50      "
       }`}
     >
-      <div className="flex  container  justify-between items-center">
+      <div className="   container  justify-between items-center">
         {isMoved ? (
-          <Image
-            src="/black_logo03.png"
-            priority
-            width={300}
-            height={50}
-            objectFit="contain"
-          />
+          <div className="flex justify-center">
+            <Image
+              src="/black_logo03.png"
+              priority
+              width={300}
+              height={50}
+              objectFit="contain"
+            />
+          </div>
         ) : (
-          <Image
-            src="/white_logo.png"
-            width={100}
-            height={100}
-            priority
-            objectFit="contain"
-          />
+          <div className="flex justify-center">
+            <Image
+              src="/white_logo.png"
+              width={100}
+              height={100}
+              priority
+              objectFit="contain"
+            />
+          </div>
         )}
 
         <div>
