@@ -2,7 +2,7 @@ import React from "react";
 
 const Service24 = () => {
   return (
-    <section className="bg-[url('/reservation-bg.jpg')] flex justify-center items-center  relative  bg-cover bg-fixed  h-[400px] ">
+    <section className="bg-service24 flex justify-center items-center  relative  bg-cover bg-fixed  h-[400px] ">
       <div className="bg-black w-full h-full opacity-50 absolute  "></div>
       <div className=" relative  container text-center    ">
         <p className="text-red-600 text-xl">

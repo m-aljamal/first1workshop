@@ -1,11 +1,17 @@
 module.exports = {
-  mode: "jit",
   content: [
     "./pages/**/*.{html,js,jsx,ts,tsx}",
     "./components/**/*.{html,js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
+      colors: {
+        "footer-bg": "#0f1017",
+      },
+      backgroundImage: {
+        service24: "url('/reservation-bg.jpg')",
+        galleryBg: "url('/products-bg.jpg')",
+      },
       letterSpacing: {
         tighter: "-.04em",
       },

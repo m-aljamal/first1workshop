@@ -16,7 +16,7 @@ const Gellery = ({ gellery }) => {
   };
   return (
     <section
-      className="bg-[url('/products-bg.jpg')]  relative  bg-cover bg-fixed  h-[600px] "
+      className="bg-galleryBg  relative  bg-cover bg-fixed  h-[600px] "
       name="gallery"
     >
       <div className="bg-black w-full h-full opacity-50 absolute  "></div>

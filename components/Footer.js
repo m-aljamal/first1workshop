@@ -18,7 +18,7 @@ const info = [
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0f1017] py-4">
+    <footer className="bg-footer-bg py-4">
       <div className="container flex flex-col md:flex-row    ">
         <div className="relative  h-36">
           <Logo />
