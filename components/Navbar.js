@@ -1,15 +1,9 @@
 import React from "react";
-import {
-  Link,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
+import { Link } from "react-scroll";
 import useScroll from "./useScroll";
 import Image from "next/image";
-const Navbar = ({ isSticky }) => {
+const Navbar = () => {
   const { isMoved } = useScroll();
-
   const links = [
     {
       label: "Home",
@@ -20,8 +14,12 @@ const Navbar = ({ isSticky }) => {
       to: "services",
     },
     {
-      label: "Pricing",
-      to: "pricing",
+      label: "Gallery",
+      to: "gallery",
+    },
+    {
+      label: "Contact Us",
+      to: "contactUs",
     },
   ];
 
@@ -57,7 +55,7 @@ const Navbar = ({ isSticky }) => {
         )}
 
         <div>
-          <div className=" flex justify-center gap-8    ">
+          <div className=" flex justify-center md:gap-8 gap-4">
             {links.map(({ to, label }) => (
               <Nav to={to} label={label} key={label} />
             ))}

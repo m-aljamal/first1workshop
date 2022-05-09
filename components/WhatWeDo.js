@@ -32,10 +32,10 @@ const WhatWeDo = () => {
           We offer full service auto repair & maintenance
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid md:grid-cols-3 grid-cols-1 gap-5">
         {jobs.map(({ title, description, icon }) => (
           <div key={title} className="flex gap-5">
-            <div className="relative w-1/4 h-16  ">
+            <div className="relative md:w-1/4 w-12 h-16  ">
               <Image
                 src={icon}
                 layout="fill"

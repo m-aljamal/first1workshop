@@ -11,10 +11,12 @@ const Home = () => {
     <div className="relative" name="home">
       <div className="text-white z-30  absolute  top-52 flex  items-center justify-center  ">
         <div className=" container">
-          <h2 className="text-4xl font-bold ">Best Car Maintenance</h2>
-          <h1 className="text-7xl font-bold">Service And Repair</h1>
-          <p className="text-4xl font-semibold">+1 123 456 789</p>
-          <p>
+          <h2 className=" text-4xl font-bold ">Best Car Maintenance</h2>
+          <h1 className=" md:text-8xl text-6xl my-4 md:my-0 font-bold">
+            Service And Repair
+          </h1>
+          <p className=" text-4xl   font-semibold">056 314 2655</p>
+          <p className="my-4">
             AUTO REPAIR IS COMMITTED TO EARNING YOUR TRUST BY PROVIDING THE
             EXPERTISE
           </p>

@@ -21,12 +21,28 @@ export default function sendEmail(req, res) {
     Message:  ${message}
     `,
   };
+
+  const successEmail = {
+    from: process.env.NEXT_PUBLIC_EMAIL_USER,
+    to: email,
+    subject: "Thank you for contact us on first1workshop",
+    text: `
+    Dear ${name},
+    Thank you for contacting us. Our team will review your inquiry and contact you back shortly.
+
+    Regards,
+    First1workshop
+
+    `,
+  };
   transporter.sendMail(mailOptions, (err, info) => {
     if (err) {
-      console.log(err);
       return res.status(500).json({ message: "Could not send email", err });
     }
-    console.log(info);
+    transporter.sendMail(successEmail, (err, info) => {
+      return;
+    });
+
     return res.status(200).json({ message: "Email sent" });
   });
 }

@@ -19,11 +19,11 @@ const info = [
 const Footer = () => {
   return (
     <footer className="bg-[#0f1017] py-4">
-      <div className="container grid grid-cols-3">
-        <div className="relative">
-          <Image src="/white_logo.png" layout="fill" objectFit="contain" />
+      <div className="container flex flex-col md:flex-row    ">
+        <div className="relative  h-36">
+          <Logo />
         </div>
-        <div className="">
+        <div className=" ">
           <h2 className="text-red-700 tracking-wider font-bold py-3 text-2xl">
             Contact Info
           </h2>
@@ -34,6 +34,10 @@ const Footer = () => {
             </div>
           ))}
         </div>
+        <div className="relative flex-1 invisible md:visible">
+          <Logo />
+        </div>
+
         <div className="">
           <h2 className="text-red-700 tracking-wider font-bold py-3 text-2xl">
             Opening Hours
@@ -65,3 +69,6 @@ const Footer = () => {
 };
 
 export default Footer;
+const Logo = () => {
+  return <Image src="/white_logo.png" layout="fill" objectFit="contain" />;
+};
