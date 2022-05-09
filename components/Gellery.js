@@ -41,9 +41,7 @@ const Gellery = ({ gellery }) => {
               spaceBetween={10}
               autoplay
               modules={[Scrollbar, Autoplay]}
-              navigation
               pagination={{ clickable: true }}
-              scrollbar={{ draggable: true }}
             >
               {gellery.map(({ _id, image }) => (
                 <div key={_id}>

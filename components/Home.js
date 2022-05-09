@@ -25,10 +25,7 @@ const Home = () => {
         spaceBetween={10}
         slidesPerView={1}
         autoplay
-        modules={[Scrollbar, Autoplay, EffectFade]}
-        navigation
-        pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
+        modules={[Autoplay, EffectFade]}
         effect="fade"
       >
         <SwiperSlide>
