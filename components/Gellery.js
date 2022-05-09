@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import { Scrollbar, Autoplay } from "swiper";
-import "swiper/css";
-import "swiper/css/autoplay";
 import { imageBuilder } from "../lib/sanity";
 import ImageModul from "./ImageModul";
+import "swiper/css";
+import "swiper/css/autoplay";
 const Gellery = ({ gellery }) => {
   const [shouldShow, setShouldShow] = useState(false);
   const [currentImage, setCurrentImage] = useState("");

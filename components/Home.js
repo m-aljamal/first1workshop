@@ -1,11 +1,10 @@
-import "swiper/css";
-import "swiper/css/autoplay";
-import "swiper/css/effect-fade";
-
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import { Scrollbar, Autoplay, EffectFade } from "swiper";
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/effect-fade";
 const Home = () => {
   return (
     <div className="relative" name="home">
