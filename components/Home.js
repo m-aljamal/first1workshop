@@ -8,7 +8,7 @@ import "swiper/css/effect-fade";
 const Home = () => {
   return (
     <div className="relative" name="home">
-      <div className="text-white z-30  absolute  top-52 flex  items-center justify-center  ">
+      <div className="text-white z-30 absolute top-1/4">
         <div className=" container">
           <h2 className=" text-4xl font-bold ">Best Car Maintenance</h2>
           <h1 className=" md:text-8xl text-6xl my-4 md:my-0 font-bold">
