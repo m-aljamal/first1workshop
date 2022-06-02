@@ -23,12 +23,9 @@ const Services = ({ services }) => {
                 src={imageBuilder(Icon).url()}
               />
             </div>
-            <h2 className="text-red-700 font-bold text-center text-xl my-2 tracking-wider">
+            <h2 className="text-gray-800 font-bold text-center text-xl my-2 tracking-wider">
               {title}
             </h2>
-            <p className="text-gray-700 text-center tracking-wide">
-              {description}
-            </p>
           </div>
         ))}
       </div>

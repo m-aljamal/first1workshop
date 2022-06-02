@@ -28,7 +28,7 @@ const Navbar = () => {
       className={` w-full py-2  ${
         !isMoved
           ? "  z-50   bg-black text-white"
-          : "bg-white text-black   fixed dark:bg-black bg-opacity-80 dark:bg-opacity-80 backdrop-blur dark:backdrop-blur transition duration-500  ease-in-out  z-50      "
+          : "bg-white text-black   fixed dark:bg-black bg-opacity-80 dark:bg-opacity-80 backdrop-blur dark:backdrop-blur transition duration-500  ease-in-out  z-50"
       }`}
     >
       <div className="   container  justify-between items-center">
