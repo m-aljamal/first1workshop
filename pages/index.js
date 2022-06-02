@@ -15,6 +15,7 @@ export default function Index({ preview, allServices, gellery }) {
       <Services services={allServices} />
       <Service24 />
       <WhatWeDo />
+      
       <Gellery gellery={gellery} />
       <ContactUs />
       <Footer />
